@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Mes projets web</title>
+  <style>
+    :root{--bg:#f6f7fb;--card:#ffffff;--accent:#0b63d6;--muted:#6b7280;}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+    body{background:linear-gradient(180deg,#eef2ff 0%,var(--bg) 100%);display:flex;align-items:center;justify-content:center;padding:36px;}
+    .wrap{max-width:900px;width:100%;}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;}
+    h1{margin:0;font-size:28px;color:#0f172a;}
+    p.lead{margin:6px 0 0;color:var(--muted);}
+    .cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06);display:flex;flex-direction:column;justify-content:space-between;min-height:140px;}
+    .card h2{margin:0 0 8px;font-size:18px;color:#0f172a;}
+    .desc{color:var(--muted);margin:0 0 12px;flex:1;}
+    .links{display:flex;gap:8px;align-items:center;}
+    .btn{background:none;border:1px solid rgba(11,99,214,0.12);padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;color:var(--accent);display:inline-flex;align-items:center;gap:8px;}
+    .btn:focus{outline:3px solid rgba(11,99,214,0.12);}
+    footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center;}
+    .meta{font-size:12px;color:var(--muted);margin-top:8px;}
+    @media(prefers-color-scheme:dark){
+      :root{--bg:#0b1220;--card:#071024;--accent:#60a5fa;--muted:#9ca3af;}
+      body{background:linear-gradient(180deg,#071024 0%,#071a2b 100%);}
+      h1{color:#e6eef8;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Portfolio — Projets Web</h1>
+        <p class="lead">Sélection de sites que j'ai développés. Clique sur un projet pour l'ouvrir.</p>
+      </div>
+      
+    </header>
+
+    <main>
+      <div class="cards">
+        <article class="card">
+          <div>
+            <h2>Srouji Avocats</h2>
+            <p class="desc">Site d'un cabinet d'avocats spécialisé en droit des affaires et propriété intellectuelle.</p>
+          </div>
+          <div class="links">
+            <a class="btn" href="https://www.sroujiavocats.com/" target="_blank" rel="noopener">Ouvrir le site</a>
+            <a class="btn" href="https://www.sroujiavocats.com/" target="_blank" rel="noopener">Voir</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h2>Vendôme Formation</h2>
+            <p class="desc">Plateforme de formation professionnelle et parcours pédagogique (site vitrine / inscription).</p>
+          </div>
+          <div class="links">
+            <a class="btn" href="https://vendome-formation.fr/" target="_blank" rel="noopener">Ouvrir le site</a>
+            <a class="btn" href="https://vendome-formation.fr/" target="_blank" rel="noopener">Voir</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h2>TravelsClass</h2>
+            <p class="desc">Agence de voyages / comparateur de vols et hôtels — réservation et offres.</p>
+          </div>
+          <div class="links">
+            <a class="btn" href="https://www.travelsclass.com/" target="_blank" rel="noopener">Ouvrir le site</a>
+            <a class="btn" href="https://www.travelsclass.com/" target="_blank" rel="noopener">Voir</a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div>Contact : +228 96181561 | Email : <a href="mailto:haslerakouete@gmail.com">haslerakouete@gmail.com</a></div>
+    </footer>
+  </div>
+</body>
+</html>
